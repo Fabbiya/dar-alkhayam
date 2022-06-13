@@ -31,7 +31,7 @@ export default function SectionContact() {
       <div className="w-100 py-5" style={{ backgroundImage: `url(${bg})` }}>
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col lg={6} className="my-2">
               <h2 className="text-light">Contact Us</h2>
               <p className="text-light">
                 Our professional team always available to answer all of your
@@ -72,7 +72,7 @@ export default function SectionContact() {
                 </Row>
               </Form>
             </Col>
-            <Col lg={6}>
+            <Col lg={6} className="my-2">
             <p className="text-light">
                   Our professional team works to increase productivity and cost
                   effective on the market all around the world
