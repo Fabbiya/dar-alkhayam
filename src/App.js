@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import SectionCapabilities from './components/SectionCapabilities/SectionCapabilities';
+import SectionContact from './components/SectionContact/SectionContact';
+import SectionDifference from './components/SectionDifference/SectionDifference';
+import SectionMain from './components/SectionMain/SectionMain';
+import SectionServices from './components/SectionServices/SectionServices';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{minWidth:"100vh"}} className="bg-light">
+      
+      
+      <SectionMain/>
+      <SectionCapabilities/>
+      <SectionDifference/>
+      <SectionServices/>
+      <SectionContact/>
     </div>
   );
 }

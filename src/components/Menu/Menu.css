@@ -1,0 +1,8 @@
+nav{
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.nav-link.active{
+    color: #FF1F17!important;
+}
