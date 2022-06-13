@@ -11,13 +11,13 @@ import bg from "./../../resources/banners/topBanner.png";
 
 export default function SectionMain() {
   return (
-    <div className=" w-100">
-      <img src={bg} className="card-img img-fluid" alt="..." />
-      <div className="card-img-overlay py-0">
+    <div className="w-100 d-flex justify-content-center" style={{backgroundImage:`url(${bg})`, backgroundSize:"cover", backgroundPosition:"center", position:"relative", minHeight:"80vh"}}>
+      <div className=" w-100" >
+      <div className="pb-5 w-100">
         <TopBar />
         <hr style={{ margin: "2px" }} className="text-light" />
         <Menu />
-        <Container className="text-center h-100 mt-5">
+        <Container className="text-center h-100 mt-5 w-100">
           <h1 className="title text-light mb-3">
             <b>
               Leader in International <br /> General Trading
@@ -29,31 +29,33 @@ export default function SectionMain() {
           </h4>
           <Container className="my-4 mx-auto">
             <Row className="justify-content-center">
-              <Col xxl={2} xl={2} lg={3} md={3} sm={4} xs={6}>
-                <Button variant="primary w-100 btn-lg">Learn More...</Button>
+              <Col xxl={2} xl={2} lg={3} md={3} sm={5} xs={5}>
+                <Button variant="primary w-100">Learn More...</Button>
               </Col>
-              <Col xxl={3} xl={3} lg={3} md={4} sm={5} xs={6}>
-                <Button variant="outline-light w-100 btn-lg">
+              <Col xxl={3} xl={3} lg={3} md={4} sm={6} xs={6}>
+                <Button variant="outline-light w-100">
                   Get Free Quote
                 </Button>
               </Col>
             </Row>
           </Container>
-          <Container className="my-4 mx-auto mt-5">
-            <Row className="justify-content-center col-12">
-              <Col xxl={1} xl={1} lg={1} md={1} sm={1} xs={1} className=" me-5">
+          <Container className="mx-auto mt-5" style={{height:"100px"}}>
+            <Row className="justify-content-center align-bottom col-12 " >
+              <Col xxl={1} xl={1} lg={1} md={1} sm={2} xs={2} className=" me-5">
                 <ServiceItem img={industrialMachines} />
               </Col>
-              <Col xxl={1} xl={1} lg={1} md={1} sm={1} xs={1} className=" me-5">
+              <Col xxl={1} xl={1} lg={1} md={1} sm={2} xs={2} className=" me-5">
                 <ServiceItem img={eDevice} />
               </Col>
-              <Col xxl={1} xl={1} lg={1} md={1} sm={1} xs={1}>
+              <Col xxl={1} xl={1} lg={1} md={1} sm={2} xs={2} className=" me-3">
                 <ServiceItem img={food} />
               </Col>
             </Row>
           </Container>
         </Container>
       </div>
+      </div>
+      {/*  */}
     </div>
   );
 }

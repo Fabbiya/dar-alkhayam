@@ -7,7 +7,7 @@ import SectionServices from './components/SectionServices/SectionServices';
 
 function App() {
   return (
-    <div style={{minWidth:"100vh"}} className="bg-light">
+    <div  className="bg-light">
       
       
       <SectionMain/>

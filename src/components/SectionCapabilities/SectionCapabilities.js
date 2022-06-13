@@ -5,7 +5,7 @@ import food from "./../../resources/serviceItems/food.png";
 import industrialMachines from "./../../resources/serviceItems/industrialLogo.png";
 export default function SectionCapabilities() {
   return (
-    <Container>
+    <Container className="pt-5">
       <Row>
         <Col lg={6}>
           <h1>Our Capabilities</h1>
@@ -64,17 +64,17 @@ export default function SectionCapabilities() {
       <Container>
         <Row className="justify-content-center col-12">
           <Col  xs={4} >
-            <img src={food} alt="Food industry" style={{maxWidth:"80px"}}  />
+            <img src={food} alt="Food industry" style={{maxWidth:"80px"}} className="img-fluid" />
             <h1>42,000 <sub className="text-muted" style={{fontSize:"12px"}}>Tons of Food</sub></h1>
             
           </Col>
           <Col  xs={4} >
-            <img src={industrialMachines} alt="Food industry" style={{maxWidth:"80px"}}  />
+            <img src={industrialMachines} alt="Food industry" style={{maxWidth:"80px"}} className="img-fluid" />
             <h1>12,000 <sub className="text-muted" style={{fontSize:"12px"}}>Industrial Machinaries</sub></h1>
            
           </Col>
           <Col  xs={4} >
-            <img src={eDevice} alt="Food industry" style={{maxWidth:"80px"}} />
+            <img src={eDevice} alt="Food industry" style={{maxWidth:"80px"}} className="img-fluid" />
             <h1>8,000 <sub className="text-muted" style={{fontSize:"12px"}}>Electronic Categories</sub></h1>
           </Col>
           

@@ -5,7 +5,7 @@ export default function TopBar() {
   return (
     <Container className="py-1">
       <Row>
-        <Col lg={6}>
+        <Col lg={3} xs={4}>
           <div className="circle-media">
             <p className="text-center">
               <i class="fab fa-twitter "></i>
@@ -22,8 +22,8 @@ export default function TopBar() {
             </p>
           </div>
         </Col>
-        <Col lg={6}>
-          <p className="w-100 text-end text-light">Dar Al Khayam General Trading LLC | Office : +971555555555</p>
+        <Col lg={9} xs={8}>
+          <p className="w-100 text-end text-light" style={{fontSize:"10px"}}><small>Dar Al Khayam General Trading LLC | Office : +971555555555</small></p>
         </Col>
       </Row>
      

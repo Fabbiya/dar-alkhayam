@@ -34,12 +34,6 @@
 
 $primary: #FF1F17;
 $light:#F5F5F5;
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1620px
-);
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

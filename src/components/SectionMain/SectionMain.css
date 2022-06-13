@@ -1,12 +1,4 @@
 
-.main-bg{
-    background: url('./../../resources/banners/topBanner.png')  ;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: left top;
-    min-width: 100vh!important;
-    background-color: rgb(255, 247, 247);
-}
 
 .title{
     line-height: 140%;

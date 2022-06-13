@@ -8,12 +8,11 @@ export default function SectionContact() {
       <Container fluid className="bg-primary text-light py-3">
         <Container>
           <Row>
-            <Col>
+            <Col lg={6}>
               <h2>Let's get in touch</h2>
             </Col>
-            <Col>
-              <Container>
-                <p>
+            <Col lg={6}>
+            <p>
                   <a href="https://google.com" className="text-light">
                     <i class="fas fa-phone px-2"></i>
                     <b>+971555555</b>
@@ -25,7 +24,6 @@ export default function SectionContact() {
                     <b>Business Bay, Dubai, UAE</b>
                   </a>
                 </p>
-              </Container>
             </Col>
           </Row>
         </Container>
@@ -33,7 +31,7 @@ export default function SectionContact() {
       <div className="w-100 py-5" style={{ backgroundImage: `url(${bg})` }}>
         <Container>
           <Row>
-            <Col>
+            <Col lg={6}>
               <h2 className="text-light">Contact Us</h2>
               <p className="text-light">
                 Our professional team always available to answer all of your
@@ -74,9 +72,8 @@ export default function SectionContact() {
                 </Row>
               </Form>
             </Col>
-            <Col>
-              <Container>
-                <p className="text-light">
+            <Col lg={6}>
+            <p className="text-light">
                   Our professional team works to increase productivity and cost
                   effective on the market all around the world
                 </p>
@@ -118,7 +115,6 @@ export default function SectionContact() {
                   </div>
                 </div>
                 </Card>
-              </Container>
             </Col>
           </Row>
         </Container>

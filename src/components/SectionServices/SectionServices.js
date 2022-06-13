@@ -5,7 +5,7 @@ import electronics from "./../../resources/serviceItems/images/electronics.png";
 import food from "./../../resources/serviceItems/images/food.png";
 export default function SectionServices() {
   return (
-    <Container className="py-5 my-5">
+    <Container className="py-3 my-5 px-5">
         <Row className="justify-content-center">
             <Col lg={3}>
             <Card>
@@ -22,7 +22,7 @@ export default function SectionServices() {
                 </div>
             </Card>
             </Col>
-            <Col lg={3}>
+            <Col lg={3} >
             <Card>
                 <img src={electronics} className="card-img img-fluid" alt='machines'/>
                 <div className='card-img-overlay text-center d-flex'>
