@@ -11,7 +11,7 @@ export default function SectionCapabilities() {
     <Container className="pt-5">
       <Row>
         <Col lg={6} className="my-auto">
-          <h1 className="mb-5">Our Capabilities</h1>
+          <h1 className="mb-5 text-primary">Our Capabilities</h1>
           <p>
             We are always aiming to exceed customer expectations and provide
             creative solutions to meet any kind of demand. Keeping up with the
@@ -23,7 +23,7 @@ export default function SectionCapabilities() {
           <Carousel variant="light">
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-thumbnail"
                 src={warehouse}
                 alt="First slide"
               />
@@ -36,7 +36,7 @@ export default function SectionCapabilities() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-thumbnail"
                 src={foodSlide}
                 alt="Second slide"
               />
@@ -48,7 +48,7 @@ export default function SectionCapabilities() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-thumbnail"
                 src={lifter}
                 alt="Third slide"
               />

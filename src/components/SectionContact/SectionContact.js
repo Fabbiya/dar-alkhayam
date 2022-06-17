@@ -13,15 +13,16 @@ export default function SectionContact() {
             </Col>
             <Col lg={6}>
             <p>
-                  <a href="https://google.com" className="text-light">
+                  <a href="tel:+97142501090" className="text-light">
                     <i class="fas fa-phone px-2"></i>
-                    <b>+971555555</b>
+                    <b>+971-4250-1090 </b>
                   </a>
+                  
                 </p>
                 <p>
-                  <a href="https://google.com" className="text-light">
+                  <a href="http://www.makani.ae/q?l=E&m=2896295688" target="_blank" className="text-light" rel="noreferrer">
                     <i class="fa fa-map-marker px-2" aria-hidden="true"></i>
-                    <b>Business Bay, Dubai, UAE</b>
+                    <b>611 22nd Rd, Deira, Al Sabkha, Dubai, United Arab Emirates</b>
                   </a>
                 </p>
             </Col>
@@ -101,17 +102,13 @@ export default function SectionContact() {
                       width="100%"
                       height="400"
                       id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=25.267740,%2055.301822&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.081861011471!2d55.299123315449776!3d25.267831535030858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43569bcf9219%3A0x683b423105e4d1bb!2sDar%20Al%20Khayam%20General%20Trading!5e0!3m2!1sen!2s!4v1655449014499!5m2!1sen!2s"
                       frameborder="0"
                       scrolling="no"
                       marginheight="0"
                       marginwidth="0"
                     ></iframe>
-                    <a href="https://123movies-to.org"></a>
-                    <br />
-                    <a href="https://www.embedgooglemap.net">
-                      embedgooglemap.net
-                    </a>
+                   
                   </div>
                 </div>
                 </Card>
