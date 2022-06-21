@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import catHeader from "./../../resources/post/catHeader.png";
 import sanityClient from "../../client.js";
 import { Col, Container, Row, Table, Spinner } from "react-bootstrap";
-import Moment from "moment";
 import { toHTML } from "@portabletext/to-html";
 import SectionPosts from "../../components/SectionPosts/SectionPosts";
 import './Post.css'

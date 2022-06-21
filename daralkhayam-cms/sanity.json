@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "daralkhayam-cms"
+    "name": "daralkhayam-cms",
+    "basePath": "/admin"
   },
   "api": {
     "projectId": "sl6q1x4v",

@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import { Container, Spinner } from 'react-bootstrap'
 import {toHTML} from '@portabletext/to-html'
-import { useParams } from "react-router-dom";
 import sanityClient from "./../../client.js";
 import SectionCategories from '../../components/SectionCategories/SectionCategories';
 import './Services.css'

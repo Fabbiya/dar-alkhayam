@@ -2,15 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import catHeader from "./../../resources/post/catHeader.png";
 import sanityClient from "../../client.js";
-import { Col, Container, Row, Table ,Spinner} from "react-bootstrap";
-import Moment from "moment";
+import { Container ,Spinner} from "react-bootstrap";
 import {toHTML} from '@portabletext/to-html'
 import SectionPosts from "../../components/SectionPosts/SectionPosts";
 import './Category.css'
-const tdStyle = {
-  //width:'10vw',
-  height: "8.5vw",
-};
+
 export default function Category() {
   const [catData, setCatData] = useState(null);
   const slug = useParams();
