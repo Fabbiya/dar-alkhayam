@@ -8,23 +8,29 @@ export default function SectionContact() {
       <Container fluid className="bg-primary text-light py-3">
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col lg={6} className="my-auto">
               <h2>Let's get in touch</h2>
             </Col>
             <Col lg={6}>
-            <p>
-                  <a href="tel:+97142501090" className="text-light">
-                    <i class="fas fa-phone px-2"></i>
-                    <b>+971-4250-1090 </b>
-                  </a>
-                  
-                </p>
-                <p>
-                  <a href="http://www.makani.ae/q?l=E&m=2896295688" target="_blank" className="text-light" rel="noreferrer">
-                    <i class="fa fa-map-marker px-2" aria-hidden="true"></i>
-                    <b>611 22nd Rd, Deira, Al Sabkha, Dubai, United Arab Emirates</b>
-                  </a>
-                </p>
+              <p className="pb-2">
+                <a href="tel:+97142501090" className="text-light text-decoration-none ">
+                  <i class="fas fa-phone px-2"></i>
+                  <b>+971-4250-1090 </b>
+                </a>
+              </p>
+              <p className="pt-2">
+                <a
+                  href="http://www.makani.ae/q?l=E&m=2896295688"
+                  target="_blank"
+                  className="text-light text-decoration-none "
+                  rel="noreferrer"
+                >
+                  <i class="fa fa-map-marker px-2" aria-hidden="true"></i>
+                  <b>
+                    611 22nd Rd, Deira, Al Sabkha, Dubai, United Arab Emirates
+                  </b>
+                </a>
+              </p>
             </Col>
           </Row>
         </Container>
@@ -39,6 +45,27 @@ export default function SectionContact() {
                 questions. Let’s get intouch!
               </p>
               <Form className="py-4">
+                <Row>
+                  <Col>
+                    <Form.Group className="mb-3">
+                      <Form.Control type="text" placeholder="Your Name" />
+                    </Form.Group>
+                  </Col>
+                  <Col>
+                    <Form.Group className="mb-3">
+                      <Form.Control type="text" placeholder="Your Surename" />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Form.Group className="mb-3">
+                  <Form.Control type="email" placeholder="Enter your Email" />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Control
+                    type="phone"
+                    placeholder="Enter your phone number eg. +97155555555"
+                  />
+                </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Control type="text" placeholder="Enter a title" />
                 </Form.Group>
@@ -74,18 +101,18 @@ export default function SectionContact() {
               </Form>
             </Col>
             <Col lg={6} className="my-2">
-            <p className="text-light">
-                  Our professional team works to increase productivity and cost
-                  effective on the market all around the world
-                </p>
-                {/* google map */}
-                <Card>
+              <p className="text-light">
+                Our professional team works to increase productivity and cost
+                effective on the market all around the world
+              </p>
+              {/* google map */}
+              <Card className="mt-3">
                 <div
-                  class="mapouter"
+                  className="mapouter"
                   style={{
                     position: "relative",
                     textAlign: "right",
-                    height: "400px",
+                    height: "500px",
                     width: "100%",
                   }}
                 >
@@ -94,13 +121,13 @@ export default function SectionContact() {
                     style={{
                       overflow: "hidden",
                       background: "none!important",
-                      height: "400px",
+                      height: "500px",
                       width: "100%",
                     }}
                   >
                     <iframe
                       width="100%"
-                      height="400"
+                      height="500"
                       id="gmap_canvas"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.081861011471!2d55.299123315449776!3d25.267831535030858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43569bcf9219%3A0x683b423105e4d1bb!2sDar%20Al%20Khayam%20General%20Trading!5e0!3m2!1sen!2s!4v1655449014499!5m2!1sen!2s"
                       frameborder="0"
@@ -108,10 +135,9 @@ export default function SectionContact() {
                       marginheight="0"
                       marginwidth="0"
                     ></iframe>
-                   
                   </div>
                 </div>
-                </Card>
+              </Card>
             </Col>
           </Row>
         </Container>

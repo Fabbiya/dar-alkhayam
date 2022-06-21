@@ -12,8 +12,8 @@ export default function SectionCapabilities() {
       <Row>
         <Col lg={6} className="my-auto">
           <h1 className="mb-5 text-primary">Our Capabilities</h1>
-          <p>
-            We are always aiming to exceed customer expectations and provide
+          <p className="pb-3">
+            We always aim to exceed customer expectations and provide
             creative solutions to meet any kind of demand. Keeping up with the
             emerging trends, market needs and combining them with our technical
             and creative expertise...
@@ -70,12 +70,12 @@ export default function SectionCapabilities() {
             <h1 className="d-inline">42,000 <sub className="text-muted" style={{fontSize:"12px"}}>Tons of Food</sub></h1>
           </Col>
           <Col  xs={4} >
-            <img src={industrialMachines} alt="Food industry" style={{maxWidth:"80px"}} className="img-fluid" />
-            <h1 className="d-inline">12,000 <sub className="text-muted" style={{fontSize:"12px"}}>Industrial Machinaries</sub></h1>
+            <img src={industrialMachines} alt="Industrial machines" style={{maxWidth:"80px"}} className="img-fluid" />
+            <h1 className="d-inline">78,000 <sub className="text-muted" style={{fontSize:"12px"}}>Industrial Machinaries</sub></h1>
            
           </Col>
           <Col  xs={4} >
-            <img src={eDevice} alt="Food industry" style={{maxWidth:"80px"}} className="img-fluid" />
+            <img src={eDevice} alt="electronic devices" style={{maxWidth:"80px"}} className="img-fluid" />
             <h1 className="d-inline">8,000 <sub className="text-muted" style={{fontSize:"12px"}}>Electronic Categories</sub></h1>
           </Col>
           

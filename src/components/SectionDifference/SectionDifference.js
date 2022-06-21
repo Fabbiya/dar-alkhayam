@@ -5,39 +5,44 @@ import person1 from "./../../resources/person1.png";
 import person2 from "./../../resources/person2.png";
 export default function SectionDifference() {
   return (
-    <div className="w-100 py-5 my-5" style={{backgroundImage:`url(${bg})`, backgroundSize:"cover", backgroundPosition:"center", position:"relative", minHeight:"80vh"}}>
-      <div className="h-100">
-        <Container className="align-middle my-auto">
-          <Row>
-            <Col lg={4}>
+    <div
+      className="w-100 py-5 my-5"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+        minHeight: "70vh",
+      }}
+    >
+      <div>
+        <Container>
+          <Row className="my-auto">
+            <Col lg={4} className="my-auto">
               <h2
-                className="text-light"
-                style={{
-                  "-webkit-text-stroke": "1px #FF1F17",
-                  fontSize: "40px",
-                }}
+                className="text-light "
+                style={{ textShadow: "5px 5px 8px #FF1F17", fontSize: "3em" }}
               >
-                What Makes <br /> us Diferent?
+                <b>
+                  What Makes <br /> us Diferent?
+                </b>
               </h2>
-              <p>
-                World class services on all shipping. this is a sample text is a
-                sample textis a sample textis a sample textis a sample textis a
-                sample textis a sample text is a sample text
-              </p>
-              <Button variant="primary w-50 my-3">Learn More...</Button>
             </Col>
             <Col lg={8}>
               <Container>
                 <Row className="py-3">
                   <Col lg={2} className="text-center">
-                    <img
+                   <div className="position-relative">
+                  
+                   <img
                       src={person1}
                       alt="Feedback for dlk"
                       style={{ width: "60px" }}
                     />
-                    <p className="text-center" style={{ fontSize: "10px" }}>
-                      John Doe | Founder
-                    </p>
+                     <span class="badge rounded-pill bg-light text-dark position-absolute bottom-0 start-75 ms-3  translate-middle">
+                        Customer
+                      </span>
+                   </div>
                   </Col>
 
                   <Col>
@@ -57,61 +62,105 @@ export default function SectionDifference() {
                     <Card>
                       <Card.Body>
                         <Card.Text>
-                          I would like to say thank you to all your staff. On
-                          time shipping and delivery done without any problem. I
-                          never recieved any cargo that much easy!
+                          I didn't expect how fast the cargo delivered to the
+                          endpoit! I would like to thank you and your team for
+                          your fast and reliable service. All goods recieved
+                          safely at the end point.
                         </Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>
                   <Col lg={2} className="text-center">
-                    <img
-                      src={person2}
-                      alt="Feedback for dlk"
-                      style={{ width: "60px" }}
-                      className="mx-auto"
-                    />
-                    <p className="text-center" style={{ fontSize: "10px" }}>
-                      John Doe | Founder
-                    </p>
+                    <div className="position-relative">
+                      <img
+                        src={person2}
+                        alt="Feedback for dlk"
+                        style={{ width: "60px" }}
+                        className="mx-auto"
+                      />
+                      <span class="badge rounded-pill bg-light text-dark position-absolute bottom-0 start-75 ms-3  translate-middle">
+                        Customer
+                      </span>
+                    </div>
                   </Col>
                 </Row>
 
-                
-                <Row className="card-deck">
-                  <Col lg={4} className="my-2">
-                    <Card style={{ backgroundColor: "rgba(0,0,0,0.4)" }}>
-                      <Card.Body>
-                        <Card.Title className="text-primary">Reliable</Card.Title>
-                        <p className="text-light">
-                          World class services on all shipping. this is a sample
-                          text is a sample textis a sample textis a sample
-                          textis a sample textis a sample textis a{" "}
-                        </p>
+                <Row>
+                  <Col className=" col-6 col-lg-4 d-flex align-items-stretch">
+                    <Card
+                      style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
+                      className="my-2 w-100"
+                    >
+                      <Card.Body className="text-center d-flex flex-column">
+                        <i class="fas fa-award text-light  fa-2x my-2"></i>
+                        <Card.Text className="text-light ">
+                          <small>High Quality Products</small>
+                        </Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col lg={4} className="my-2">
-                    <Card style={{ backgroundColor: "rgba(0,0,0,0.4)" }}>
-                      <Card.Body>
-                      <Card.Title className="text-primary">Experienced</Card.Title>
-                        <p className="text-light">
-                          World class services on all shipping. this is a sample
-                          text is a sample textis a sample textis a sample
-                          textis a sample textis a sample textis a{" "}
-                        </p>
+                  <Col className="col-6 col-lg-4 d-flex align-items-stretch">
+                    <Card
+                      style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
+                      className="my-2 w-100"
+                    >
+                      <Card.Body className="text-center d-flex flex-column">
+                        <i class="fa-solid fa-handshake text-light  fa-2x my-2"></i>
+                        <Card.Text className="text-light ">
+                          <small>Negotiable & Competitive price</small>
+                        </Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col lg={4} className="my-2">
-                    <Card style={{ backgroundColor: "rgba(0,0,0,0.4)" }}>
-                      <Card.Body>
-                      <Card.Title className="text-primary">Trusted</Card.Title>
-                        <p className="text-light">
-                          World class services on all shipping. this is a sample
-                          text is a sample textis a sample textis a sample
-                          textis a sample textis a sample textis a{" "}
-                        </p>
+                  <Col className=" col-6 col-lg-4 d-flex align-items-stretch">
+                    <Card
+                      style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
+                      className="my-2 w-100"
+                    >
+                      <Card.Body className="text-center d-flex flex-column">
+                        <i class="fa-solid fa-users-gear text-light my-2 fa-2x"></i>
+                        <Card.Text className="text-light">
+                          <small>Total and Complete industrial solutions</small>
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col className="col-6 col-lg-4 d-flex align-items-stretch">
+                    <Card
+                      style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
+                      className="my-2 w-100"
+                    >
+                      <Card.Body className="text-center d-flex flex-column">
+                        <i class="fas fa-upload text-light my-2 fa-2x"></i>
+                        <Card.Text className="text-light">
+                          <small>Up to date products & information</small>
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col className="col-6 col-lg-4 d-flex align-items-stretch">
+                    <Card
+                      style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
+                      className="my-2 w-100"
+                    >
+                      <Card.Body className="text-center d-flex flex-column">
+                        <i class="fa-solid fa-gauge-high text-light my-2 fa-2x"></i>
+                        <Card.Text className="text-light">
+                          <small>Fast Response</small>
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col className="col-6 col-lg-4 d-flex align-items-stretch">
+                    <Card
+                      style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
+                      className="my-2 w-100"
+                    >
+                      <Card.Body className="text-center d-flex flex-column">
+                        <i class="fas fa-truck-loading text-light my-2 fa-2x"></i>
+                        <Card.Text className="text-light">
+                          <small>Reliable & on time Delivery</small>
+                        </Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>

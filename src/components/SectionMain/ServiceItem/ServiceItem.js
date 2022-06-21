@@ -7,6 +7,7 @@ export default function ServiceItem(props) {
 
     <div className="card-service-item ">
         <img src={props.img} className=" img-fluid" alt=""  />
+        <h6 className="text-center text-light py-2"><small>{props.title}</small></h6>
     </div>
   );
 }

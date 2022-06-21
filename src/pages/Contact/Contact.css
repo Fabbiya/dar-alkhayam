@@ -1,0 +1,12 @@
+@media (min-width:321px) and (max-width: 771px){
+    .bg-contact{
+        /* -webkit-transform: scale(4);
+        transform: scale(4); 
+       -webkit-transform-origin: center;
+        transform-origin: center; */
+        background-position:left;
+        width: 300%!important;
+        height: 70vh;
+        
+    }
+}

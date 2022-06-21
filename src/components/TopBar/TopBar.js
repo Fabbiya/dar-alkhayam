@@ -1,7 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./TopBar.css";
+
+
 export default function TopBar() {
+  
+
   return (
     <Container className="py-1">
       <Row>
@@ -22,8 +26,8 @@ export default function TopBar() {
             </p>
           </div>
         </Col>
-        <Col lg={9} xs={8}>
-          <p className="w-100 text-end text-light" style={{fontSize:"10px"}}><small>Dar Al Khayam General Trading LLC | Office : +971555555555</small></p>
+        <Col lg={9} xs={8} className="my-auto">
+          <p className={`w-100 text-end text-light`} style={{fontSize:"10px"}}>Dar Al Khayam General Trading LLC | Office : <a href="tell:+97142501090" className="text-decoration-none">+971 42 50 10 90</a></p>
         </Col>
       </Row>
      

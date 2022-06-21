@@ -9,6 +9,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'subtitle',
+      title: 'Sub title',
+      type: 'string',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -46,6 +51,14 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    },
+    {
+      name: 'specification',
+      title: 'Specification',
+      type: 'array',
+      of:[
+        {type:'specificationRow'}
+      ]
     },
   ],
 

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
-
-import Menu from "../../components/Menu/Menu";
 import { useParams } from "react-router-dom";
 import catHeader from "./../../resources/post/catHeader.png";
 import sanityClient from "../../client.js";
-import { Col, Container, Row, Table } from "react-bootstrap";
-import TopBar from "../../components/TopBar/TopBar";
+import { Col, Container, Row, Table ,Spinner} from "react-bootstrap";
 import Moment from "moment";
 import {toHTML} from '@portabletext/to-html'
-
+import SectionPosts from "../../components/SectionPosts/SectionPosts";
+import './Category.css'
 const tdStyle = {
   //width:'10vw',
   height: "8.5vw",
@@ -38,112 +36,37 @@ export default function Category() {
       .catch(console.error);
   }, [slug]);
 
-  if (!catData) return <div>Loading...</div>;
+  if (!catData) return (
+    <div className="text-center bg-light d-flex align-items-center justify-content-center" style={{height:"100vh", width:"100vw", position:"absolute", left:"0px", top:"0px", zIndex:"9999"}}>
+     <div className="">
+     <Spinner animation="border" variant="primary" /> <p>Loading....</p> 
+     </div>
+    </div>
+  );
   return (
     <div className="w-100">
     
       <div
-        style={{
-          backgroundImage: `url(${catHeader})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 58.5%",
-        }}
+       
       >
-        <TopBar />
-        <hr style={{ margin: "2px" }} className="text-light" />
-        <Menu />
-        <Container className="pt-5">
-          <Row className="mx-0">
-            <Col lg={6} className="h-100 mb-0 mt-auto pe-0">
-              <div className="pb-5">
-                <h1>
-                  <b>{catData.title}</b>
-                </h1>
-                <p>{catData.subtitle}</p>
-                <p className=" my-5">
-                  <i class="fa-solid fa-circle-arrow-down fa-4x text-primary "></i>
-                </p>
-              </div>
-
-              <Table className="pb-0 pt-0 mb-0 mt-auto w-100">
-                <tbody>
-                  <tr>
-                    <td className="bg-primary col-6" style={tdStyle}>
-                      <div className="text-center ">
-                        <p>
-                          <i
-                            class="fas fa-clock pe-2 fa-2x text-light"
-                            aria-hidden="true"
-                          ></i>
-                        </p>
-                        <h6 className="pt-3 my-0 text-dark"> 2 mins read</h6>
-                      </div>
-                    </td>
-                    <td style={tdStyle}>
-                      <div className="text-center"></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style={tdStyle}>
-                      <div className="text-center">
-                        <p>
-                          <i
-                            class="fa fa-calendar pe-2 fa-2x text-primary"
-                            aria-hidden="true"
-                          ></i>
-                        </p>
-                        <h6 className="pt-3 my-0 text-dark"> Publish Date</h6>
-
-                        <p className="my-0 text-muted">
-                          <b>
-                            <small>
-                              {" "}
-                              {Moment(catData.publishedAt).format(
-                                "DD MMM YYYY"
-                              )}
-                            </small>
-                          </b>
-                        </p>
-                      </div>
-                    </td>
-                    <td className="bg-primary" style={tdStyle}>
-                      <div className="text-center">
-                        <img
-                          src={catData.authorImg}
-                          alt={catData.authorName}
-                          width="30px"
-                          className="rounded-circle"
-                          style={{ width: "35px", border: "solid white 1px" }}
-                        />
-                        <h6 className="pt-3 my-0 text-light"> Author</h6>
-                        <p className="my-0 text-light">
-                          <b>
-                            <small>{catData.authorName}</small>
-                          </b>
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </Col>
-            <Col lg={6} className="ms-0 ps-0">
-              <img
-                src={catData.insideImgUrl}
-                alt={catData.title}
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-        </Container>
+        <img src={catHeader} style={{position:"absolute", left:"0px", top:"0px", maxHeight:"46vh", width:"100%", zIndex:"-1"}} alt="main page bg" className="bg-category"/>
+        <Container  style={{height:"35vh"}}>
+        <div className='col-lg-6 d-flex align-items-end' style={{height:"90%"}}>
+          <div >
+          <h1 className='text-light text-uppercase py-3'>{catData.title}</h1>
+          <h5 className='text-light'>{catData.subtitle}</h5>
+          </div>
+        </div>
+        
+      </Container>
       </div>
-      <Container style={{ backgroundColor: "#FAFAFA" }} className="p-5">
+      <Container style={{ backgroundColor: "#FAFAFA" }} className="py-5 px-3">
         <div dangerouslySetInnerHTML={{__html: toHTML(catData.description)}} ></div>
       </Container>
       <Container style={{backgroundColor:"#FFEAE8"}}>
-       <div className="p-5">
+       <div className="py-5">
        <h5 className="text-center"><b>RECENT ARTICLES</b></h5>
-       <p>Show the posts for this category</p>
+       <SectionPosts/>
        
        </div>
       </Container>

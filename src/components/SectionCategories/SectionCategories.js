@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import industrialMachines from "./../../resources/serviceItems/images/IndustrialMachinaries.png";
-import electronics from "./../../resources/serviceItems/images/electronics.png";
-import food from "./../../resources/serviceItems/images/food.png";
 import sanityClient from "./../../client";
 import { Link } from "react-router-dom";
 
@@ -33,7 +30,7 @@ export default function SectionCategories() {
       <Row className="justify-content-center">
         {allCategories &&
           allCategories.map((cat, index) => (
-            <Col lg={3}>
+            <Col lg={3} className="my-2">
               <Link to={`/category/${cat.slug.current}`} key={cat.slug.current}>
                 <Card>
                   <img

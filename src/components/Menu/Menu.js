@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from './../../resources/logo.png'
 import './Menu.css'
 export default function Menu(props) {
+  
   return (
     <Navbar bg={props.background} expand="lg" variant={props.theme}>
       <Container>

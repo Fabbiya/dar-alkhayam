@@ -20,6 +20,7 @@ export default function SectionMain() {
           width: "100%",
           zIndex: "-1",
         }}
+        className=" bg"
         alt="main page bg"
       />
       <div className="w-100 d-flex justify-content-center">
@@ -60,7 +61,7 @@ export default function SectionMain() {
                     xs={2}
                     className=" me-5"
                   >
-                    <ServiceItem img={industrialMachines} />
+                    <ServiceItem img={industrialMachines} title="Inductrial Machines" />
                   </Col>
                   <Col
                     xxl={1}
@@ -71,7 +72,7 @@ export default function SectionMain() {
                     xs={2}
                     className=" me-5"
                   >
-                    <ServiceItem img={eDevice} />
+                    <ServiceItem img={eDevice} title ="Electronic Goods" />
                   </Col>
                   <Col
                     xxl={1}
@@ -82,7 +83,7 @@ export default function SectionMain() {
                     xs={2}
                     className=" me-3"
                   >
-                    <ServiceItem img={food} />
+                    <ServiceItem img={food}  title="Food Industry"/>
                   </Col>
                 </Row>
               </Container>

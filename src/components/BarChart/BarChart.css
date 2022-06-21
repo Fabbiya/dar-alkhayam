@@ -1,0 +1,8 @@
+.chart-container{
+    height: "30vh";
+}
+@media (min-width:321px) and (max-width: 770px){
+    .chart-container{
+       height: "80vh";
+    }
+}
