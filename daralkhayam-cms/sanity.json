@@ -1,8 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "daralkhayam-cms",
-    "basePath": "/admin"
+    "name": "daralkhayam-cms"
+
   },
   "api": {
     "projectId": "sl6q1x4v",
@@ -12,9 +12,7 @@
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "table",
-    "datatable"
+    "@sanity/desk-tool"
   ],
   "env": {
     "development": {
