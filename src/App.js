@@ -14,7 +14,7 @@ import Post from "./pages/Post/Post";
 
 function App() {
   return (
-    <div>
+    <div >
        <TopBar  />
         <hr style={{ margin: "2px" }} className="text-light" />
         <Menu background="transparent" theme="dark"/>

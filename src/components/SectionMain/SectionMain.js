@@ -9,7 +9,8 @@ import bg from "./../../resources/banners/topBanner.png";
 
 export default function SectionMain() {
   return (
-    <div>
+    <div >
+      <div style={{ overflowX: "hidden" , maxWidth:"100vw"}}>
       <img
         src={bg}
         style={{
@@ -23,6 +24,7 @@ export default function SectionMain() {
         className=" bg"
         alt="main page bg"
       />
+      </div>
       <div className="w-100 d-flex justify-content-center">
         <div className=" w-100 ">
           <div className="pb-5 w-100">

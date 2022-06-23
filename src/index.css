@@ -1,6 +1,7 @@
 html,body{
   width: 100%;
   height: 100%;  
+  
 }
 
 body {
@@ -15,4 +16,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  overflow-x: hidden;
+  position: relative;
 }

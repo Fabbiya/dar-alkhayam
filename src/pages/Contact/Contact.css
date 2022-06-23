@@ -4,9 +4,9 @@
         transform: scale(4); 
        -webkit-transform-origin: center;
         transform-origin: center; */
-        background-position:left;
+        margin-left: -130%;
         width: 300%!important;
         height: 70vh;
-        
+        filter: brightness(0.60);
     }
 }

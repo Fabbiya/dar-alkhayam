@@ -3,7 +3,7 @@ import { Container, Spinner } from 'react-bootstrap'
 import {toHTML} from '@portabletext/to-html'
 import sanityClient from "./../../client.js";
 import SectionCategories from '../../components/SectionCategories/SectionCategories';
-import './Services.css'
+
 
 export default function Services() {
   const [data, setData] = useState(null);
@@ -47,7 +47,7 @@ export default function Services() {
         </div>
         
       </Container></div>
-     <Container style={{backgroundColor:"#FAFAFA"}} className="py-5 px-5" >
+     <Container style={{backgroundColor:"#FAFAFA"}} className="py-5 px-3" >
      <div dangerouslySetInnerHTML={{__html: toHTML(data.description)}} ></div>
      <SectionCategories/>
      </Container>
