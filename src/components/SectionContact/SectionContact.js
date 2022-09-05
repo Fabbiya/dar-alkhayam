@@ -2,7 +2,9 @@ import React from "react";
 import { Col, Container, Form, Row, Button, Card } from "react-bootstrap";
 import bg from "./../../resources/banners/worldMap.png";
 
+
 export default function SectionContact() {
+  
   return (
     <div className="w-100">
       <Container fluid className="bg-primary text-light py-3">
@@ -44,36 +46,39 @@ export default function SectionContact() {
                 Our professional team always available to answer all of your
                 questions. Let’s get intouch!
               </p>
-              <Form className="py-4">
+              <Form className="py-4" action="POST" data-netlify="true">
                 <Row>
                   <Col>
                     <Form.Group className="mb-3">
-                      <Form.Control type="text" placeholder="Your Name" />
+                      <Form.Control type="text" placeholder="Your Name" name="name"/>
                     </Form.Group>
                   </Col>
                   <Col>
                     <Form.Group className="mb-3">
-                      <Form.Control type="text" placeholder="Your Surename" />
+                      <Form.Control type="text" placeholder="Your Surename"  name="surename"/>
                     </Form.Group>
                   </Col>
                 </Row>
                 <Form.Group className="mb-3">
-                  <Form.Control type="email" placeholder="Enter your Email" />
+                  <Form.Control type="email" placeholder="Enter your Email" name="email" />
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Control
                     type="phone"
                     placeholder="Enter your phone number eg. +97155555555"
+                    name="email"
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Control type="text" placeholder="Enter a title" />
+                  <Form.Control type="text" placeholder="Enter a subject" name="subject" />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                  <Form.Control as="textarea" rows={10} placeholder="Message" />
+                  <Form.Control as="textarea" rows={10} placeholder="Message" name="message"/>
                 </Form.Group>
-
+                <Form.Group className="mb-3">
+                  <div data-netlify-recaptcha="true"></div>
+                </Form.Group>
                 <Row>
                   <Col>
                     <div className="circle-media">
@@ -93,7 +98,7 @@ export default function SectionContact() {
                     </div>
                   </Col>
                   <Col className="d-flex justify-content-end">
-                    <Button variant="primary text-light" type="submit">
+                    <Button variant="primary text-light" type="submit" >
                       Send Message
                     </Button>
                   </Col>
@@ -126,6 +131,7 @@ export default function SectionContact() {
                     }}
                   >
                     <iframe
+                    title="gmap"
                       width="100%"
                       height="500"
                       id="gmap_canvas"
