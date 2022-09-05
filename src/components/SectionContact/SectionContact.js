@@ -83,19 +83,19 @@ export default function SectionContact() {
                 <Row>
                   <Col>
                     <div className="circle-media">
-                      <p className="text-center">
+                      <a className="text-center text-dark ms-1" target="_blank" href="https://twitter.com/DaralKhayam" rel="noreferrer">
                         <i class="fab fa-twitter "></i>
-                      </p>
+                      </a>
                     </div>
                     <div className=" circle-media">
-                      <p className="text-center">
+                      <a className="text-center text-dark ms-1" target="_blank" href="https://www.linkedin.com/in/dar-al-khayam-llc-b6538124b/" rel="noreferrer">
                         <i class="fa fa-linkedin " aria-hidden="true"></i>
-                      </p>
+                      </a>
                     </div>
                     <div className=" circle-media">
-                      <p className="text-center">
+                      <a className="text-center text-dark ms-1" target="_blank" href="https://www.instagram.com/daralkhayamllc/" rel="noreferrer">
                         <i class="fab fa-instagram "></i>
-                      </p>
+                      </a>
                     </div>
                   </Col>
                   <Col className="d-flex justify-content-end">
