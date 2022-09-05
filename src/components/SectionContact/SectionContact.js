@@ -46,7 +46,7 @@ export default function SectionContact() {
                 Our professional team always available to answer all of your
                 questions. Let’s get intouch!
               </p>
-              <Form className="py-4" action="POST" data-netlify="true">
+              <Form className="py-4" action="POST" data-netlify="true" name="contact">
                 <Row>
                   <Col>
                     <Form.Group className="mb-3">
