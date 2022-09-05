@@ -46,7 +46,8 @@ export default function SectionContact() {
                 Our professional team always available to answer all of your
                 questions. Let’s get intouch!
               </p>
-              <Form className="py-4" action="POST" data-netlify="true" name="contact">
+              <Form className="py-4" method="POST" name="contact">
+              <input type="hidden" name="form-name" value="contact" />
                 <Row>
                   <Col>
                     <Form.Group className="mb-3">
@@ -66,7 +67,7 @@ export default function SectionContact() {
                   <Form.Control
                     type="phone"
                     placeholder="Enter your phone number eg. +97155555555"
-                    name="email"
+                    name="mobile"
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
