@@ -33,7 +33,7 @@ function App() {
       </Router>
       <SectionContact />
       <footer className="bg-dark text-light">
-        <p className="text-center "><small>© Dar Al Khayam General Trading LLC.  All rights reserved. | <a href="tell:0097142501090" className="text-decoration-none">+971 42 50 10 90</a></small></p>
+        <p className="text-center "><small>© Dar Al Khayam General Trading LLC.  All rights reserved. | <a href="tel:0097142501090" className="text-decoration-none">+971 42 50 10 90</a></small></p>
       </footer>
     </div>
   );

@@ -27,7 +27,7 @@ export default function TopBar() {
                     </div>
         </Col>
         <Col lg={9} xs={8} className="my-auto">
-          <p className={`w-100 text-end text-light`} style={{fontSize:"10px"}}>Dar Al Khayam General Trading LLC | Office : <a href="tel:+97142501090" className="text-decoration-none">+971 42 50 10 90</a></p>
+          <p className={`w-100 text-end text-light`} style={{fontSize:"10px"}}>Dar Al Khayam General Trading LLC | Office : <a href="tel:0097142501090" className="text-decoration-none">+971 42 50 10 90</a></p>
         </Col>
       </Row>
      
