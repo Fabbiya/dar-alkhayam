@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a555fd35-6f16-467a-9c95-9615f70c7889/deploy-status)](https://app.netlify.com/sites/dar-al-khayam/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
